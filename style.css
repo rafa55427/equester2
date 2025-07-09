@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 3px solid red;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+header p {
+  margin: 5px 0;
+  color: #ff5555;
+}
+nav button {
+  background: #222;
+  border: none;
+  color: #ff5555;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+nav button.active,
+nav button:hover {
+  background: red;
+  color: #fff;
+}
+main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #111;
+}
+.message {
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  max-width: 80%;
+  box-shadow: 0 0 10px #ff0000a0;
+}
+.message.user {
+  background: #220000;
+  color: #ffa5a5;
+  margin-left: auto;
+  border-left: 5px solid #ff5555;
+}
+.message.ai {
+  background: #330000;
+  color: #ffdddd;
+  margin-right: auto;
+  border-left: 5px solid red;
+}
+footer {
+  display: flex;
+  background: #111;
+  padding: 10px;
+  gap: 5px;
+  border-top: 3px solid red;
+}
+footer input {
+  flex: 1;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+footer button {
+  background: red;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+footer button:hover {
+  background: #ff4444;
+}
